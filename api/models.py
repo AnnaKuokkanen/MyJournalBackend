@@ -5,4 +5,4 @@ from django.utils import timezone
 class JournalEntry(models.Model): 
     id = models.BigAutoField(primary_key=True)
     content = models.TextField(null=True)
-    date = models.DateField(default=timezone.now)
+    date = models.DateTimeField(default=timezone.now)
